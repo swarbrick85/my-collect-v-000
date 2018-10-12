@@ -1,10 +1,8 @@
 def my_collect(array)
   x = 0
   y = []
-  
   while x < array.size
-  yield array[x]
-  y<<"nil"
+  y<<yield array[x]
   x += 1
 end
 end
